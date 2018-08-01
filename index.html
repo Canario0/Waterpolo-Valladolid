@@ -14,7 +14,7 @@
 
     <style>
         body {
-            padding-top: 70px;
+            padding-top: 75px;
         }
 
         .navbar {
@@ -30,6 +30,11 @@
         .nav-link {
             font-size: 1.5rem;
         }
+
+
+        .nav-link.active {
+            background-color: #343a40 !important;
+        }
     </style>
 </head>
 
@@ -44,32 +49,70 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto mr-1">
+            <ul class="nav navbar-nav nav-pills ml-auto mr-1" id="pills-tab">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">El Club
+                    <a class="nav-link active" href="#inicioData" data-toggle="pill">Inicio
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Noticias</a>
+                    <a class="nav-link " href="#eventosData" data-toggle="pill">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
+                    <a class="nav-link" href="#noticiasData" data-toggle="pill">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contactoData" data-toggle="pill">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p>Use this document as a way to quickly start any new project.
-                <br> All you get is this text and a mostly barebones HTML document.</p>
+    <div class="tab-content">
+        <!-- Contenido pestaña inicio -->
+        <div id="inicioData" class="tab-pane show active">
+            <div class="container">
+                <div class="starter-template">
+                    <h1>Pestaña de Inicio</h1>
+                    <p>Esta pestaña contendrá toda la info que aparecerá en la pestaña de inicio.</p>
+                </div>
+            </div>
         </div>
+        <!-- / Contenido pestaña inicio -->
+
+        <!-- Contenido pestaña eventos -->
+        <div id="eventosData" class="tab-pane">
+            <div class="container">
+                <div class="starter-template">
+                    <h1>Pestaña de Eventos</h1>
+                    <p>Esta pestaña contendrá toda la info que aparecerá en la pestaña de eventos.</p>
+                </div>
+            </div>
+        </div>
+        <!-- / Contenido pestaña eventos -->
+
+
+        <!-- Contenido pestaña noticias -->
+        <div id="noticiasData" class="tab-pane">
+            <div class="container">
+                <div class="starter-template">
+                    <h1>Pestaña de Noticias</h1>
+                    <p>Esta pestaña contendrá toda la info que aparecerá en la pestaña de noticias.</p>
+                </div>
+            </div>
+        </div>
+        <!-- / Contenido pestaña noticias -->
+
+        <!-- Contenido pestaña contacto -->
+        <div id="contactoData" class="tab-pane">
+            <div class="container">
+                <div class="starter-template">
+                    <h1>Pestaña de Contacto</h1>
+                    <p>Esta pestaña contendrá toda la info que aparecerá en la pestaña de contacto.</p>
+                </div>
+            </div>
+        </div>
+        <!-- / Contenido pestaña contacto -->
     </div>
-    <!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
